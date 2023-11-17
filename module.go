@@ -1,7 +1,6 @@
 package qiwlar
 
 import (
-	"fmt"
 	"reflect"
 )
 
@@ -77,9 +76,6 @@ func (m *module) collect(buildModule func(interface{}) *module) []interface{} {
 			panic("invalid exports")
 		}
 	}
-
-	fmt.Println(m.meta.Type())
-	fmt.Println(m)
 
 	return nil
 }
